@@ -15,15 +15,15 @@ int main()
     /* 
       EXAMPLE 2 
     */
-    // Definition 
+    // Declaration & Definition 
     int num1;
     int num2;
     int sum;
 
     // Getting Inputs 
-    cout << "Enter the first nmber: ";
+    cout << "Enter the first number: ";
     cin >> num1;
-    cout <<" Enter the second nmber: ";
+    cout <<" Enter the second number: ";
     cin >> num2;
 
     // Calculation and storing result 
@@ -45,11 +45,22 @@ int main()
       EXAMPLE 4
       Three ways to use constants.
     */
-    const double pi = 3.1415926536;
+    const double pi = 3.1415926536;   //Memory Constant
 
     cout << "Defined constant PI: " << PI << endl;
     cout << "Memory constant pi: " << pi << endl;
     cout << "Literal constant: " << 3.1415926536 << endl;
-
+    
+    /* 
+      EXAMPLE 5 
+    */
+    //Integer data type conversions & Decimal/Float data type conversions 
+    cout << sizeof(56) << endl;    //The size displayed is 4 bytes(default data type is 'int')
+    cout << sizeof(56L) << endl;   //The size displayed is 8 bytes('L' stands for 'long'/'long int' data type)
+    
+    cout << sizeof(20.5) << endl;   //The size displayed is 8 bytes(default data type is 'double')
+    cout << sizeof(20.5F) << endl;  //The size displayed is 4 bytes('F' stands for 'float' data type)
+    cout << sizeof(20.5L); //The size displayed is 16 bytes('L' stands for 'long' data type)
+    
     return 0;
 }
